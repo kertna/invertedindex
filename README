@@ -1,0 +1,26 @@
+
+In creating inverted index,I have used Trie to store the words and AVL Tree to store the posting list.
+
+TIME COMPLEXITY:
+
+To search a word in trie it takes O(length of word).
+If w is the total number of words, then O(w*length of maximum length word) would be time complexity.
+
+To search a documnet number into the AVL tree, it takes O(logn) time, there n is number of documents that contain that word.
+If w is the number of words then O(w*logn) would be total time complexity.(n is no,of documents).
+
+SPACE COMPLEXITY:
+
+For each word, I have created a AVL tree which stores the documents in which it is present.At maximum it is present in all the documents.
+So space complexity would be O(no,of documnets) for each word.
+
+If w is the number of words then O(w*n) would be total space complexity.(n is no,of documents).
+
+For Trie the space complexity would be O(m*n) where m is the average length of the string and n is the number of words.
+
+
+
+
+
+
+
